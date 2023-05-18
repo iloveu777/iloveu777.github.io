@@ -3,6 +3,17 @@
 <head>
   <title>Сайт о компьютерах</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <script>
+    // Функция для обновления времени в заголовке
+    function updateTime() {
+      var now = new Date();
+      var timeString = now.toLocaleTimeString(); // Получаем текущее время
+      document.title =  timeString; // Обновляем заголовок страницы
+    }
+
+    // Вызываем функцию updateTime каждую секунду
+    setInterval(updateTime, 1000);
+  </script>
 </head>
 <body>
   <div class="container">
